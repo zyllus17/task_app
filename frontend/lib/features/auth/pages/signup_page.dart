@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// import 'package:frontend/features/auth/cubit/auth_cubit.dart';
+import 'package:frontend/features/auth/pages/login_page.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignupPage extends StatefulWidget {
   static MaterialPageRoute route() => MaterialPageRoute(
@@ -134,7 +137,7 @@ class _SignupPageState extends State<SignupPage> {
             const SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                // Navigator.of(context).push(LoginPage.route());
+                Navigator.of(context).push(LoginPage.route());
               },
               child: RichText(
                 text: TextSpan(
